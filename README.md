@@ -1,17 +1,13 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
-### Date created
-Include the date you created this project and README file.
-
+# Date created
+2022-12-01
 ### Project Title
-Replace the Project Title
-
+Analyze bike share data using python with pandas and numpy
 ### Description
-Describe what your project is about and what it does
-
+A sample project to analyze bike share data using python with pandas and numpy
 ### Files used
-Include the files used
-
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+```bash
+pip install pandas
+pip install numpy
+```
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
