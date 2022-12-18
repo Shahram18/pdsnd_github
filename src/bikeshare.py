@@ -11,7 +11,6 @@ message='\nA sample project to process BikeShare data using pandas and numpy.'
 print(message)
 
 def get_filters():
-    
     while True:
         city=input('\nPlease choose a city between, Chicago, New York City, or Washington: ').lower()
         if city not in CITY_DATA.keys():
@@ -58,7 +57,6 @@ def get_filters():
     return city, month, day
 
 def load_data(city, month, day):
-    
     df = pd.DataFrame(pd.read_csv(CITY_DATA[city]))
     
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -78,7 +76,6 @@ def load_data(city, month, day):
     return df
 
 def time_res(df, month, day):
-    
     print('\nThe Most Frequent Times of Travel...\n')
     start_time = time.time()
 
@@ -100,7 +97,6 @@ def time_res(df, month, day):
     print('-'*40)
 
 def station_res(df):
-    
     print('\The Most Popular Stations and Trip...\n')
     start_time = time.time()
     used_start_station=df['Start Station'].mode()[0]
